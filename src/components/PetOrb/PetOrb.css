@@ -1,0 +1,131 @@
+.pet-orb-wrap {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.pet-orb-wrap--open {
+  z-index: 20;
+}
+
+.pet-orb {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  overflow: visible;
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.25s ease;
+}
+
+.pet-orb:hover,
+.pet-orb-wrap--open .pet-orb {
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.pet-orb__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pet-orb__placeholder {
+  font-size: 2rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-orb__badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 11px;
+  background: var(--accent-hover);
+  color: var(--on-accent);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--surface);
+}
+
+.pet-orb__name {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-h);
+  white-space: nowrap;
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  padding: 2px 10px;
+  border-radius: 12px;
+  pointer-events: none;
+  font-family: "Emilys Candy", serif;
+}
+
+.pet-orb__petal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78px;
+  height: 78px;
+  margin: -39px 0 0 -39px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: var(--on-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.25s ease, background 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pet-orb-wrap--open .pet-orb__petal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pet-orb__petal:hover {
+  background: var(--accent-hover);
+}
+
+.pet-orb__petal--delete {
+  background: var(--danger);
+}
+
+.pet-orb__petal--delete:hover {
+  background: var(--danger-hover);
+}
+
+.pet-orb__petal-icon {
+  font-size: 18px;
+}
+
+.pet-orb__petal-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}

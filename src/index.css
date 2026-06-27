@@ -1,0 +1,86 @@
+:root {
+  --accent: #794d96;
+  --accent-light: #b893d0;
+  --accent-dark: color-mix(in srgb, var(--accent) 70%, black);
+  --accent-hover: color-mix(in srgb, var(--accent) 80%, black);
+  --bg: #f6f1fa;
+  --surface: #ffffff;
+  --surface-muted: #faf7fc;
+  --surface-hover: #f0e8f5;
+  --border: #e5dcee;
+  --text-h: #4a2e5c;
+  --text: #6b5c78;
+  --text-muted: #9a8aab;
+  --on-accent: #ffffff;
+  --on-accent-muted: #e3d6ec;
+  --danger: #a33a4d;
+  --danger-hover: #82293a;
+  --danger-surface: #fdecef;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  font: 16px/145% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  min-height: 100svh;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: var(--sans);
+}
+
+input,
+select,
+textarea {
+  font-family: var(--sans);
+  color: var(--text-h);
+}
+
+[data-theme="dark"] {
+  --bg: #1a1420;
+  --surface: #2a2233;
+  --surface-muted: #241c2e;
+  --surface-hover: #3d3350;
+  --border: #3d3350;
+  --text-h: #e8dff0;
+  --text: #b8aac8;
+  --text-muted: #8a78a0;
+  --on-accent-muted: rgba(255, 255, 255, 0.72);
+  --danger-surface: #3a1f28;
+  --settings-section-bg: var(--surface);
+  --settings-border: var(--border);
+  --settings-input-bg: #1f1828;
+  --settings-toggle-bg: var(--surface-hover);
+}

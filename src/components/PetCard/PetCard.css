@@ -1,0 +1,27 @@
+
+.petCard{
+    padding: 74px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--accent-light);
+    border:1px solid var(--accent);
+    border-radius:40px;
+    cursor:pointer;
+    width: 100%;
+}
+.petCard__photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.petCard__name{
+    font-size: 20px;
+    color: var(--text-h);
+    margin:5px;
+}
+.petCard__p{
+    font-size: 17px;
+    color: var(--text-h);
+}

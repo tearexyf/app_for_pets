@@ -1,0 +1,200 @@
+.settings-page {
+  min-height: 100svh;
+  padding: 20px 74px 100px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.settings-title {
+  font-size: 32px;
+  margin: 0;
+  color: var(--text-h);
+  text-align: center;
+  font-family: "Mystery Quest", system-ui;
+
+}
+
+.settings-saved {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4d9669;
+  background: #e3f3e8;
+  padding: 4px 10px;
+  border-radius: 12px;
+  animation: settings-fade 0.2s ease;
+}
+
+@keyframes settings-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.settings-section {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.settings-section__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #9a8aab;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 12px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.settings-field input {
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+  outline: none;
+  background: var(--surface-muted);
+  color: var(--text-h);
+}
+
+.settings-field input:focus {
+  border-color: var(--accent);
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 15px;
+  color: var(--text-h);
+  font-weight: 500;
+}
+
+.settings-row + .settings-row {
+  border-top: 1px solid var(--border);
+}
+
+.settings-toggle-group {
+  display: flex;
+  background: var(--surface-hover);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.settings-toggle-btn {
+  border: none;
+  background: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.settings-toggle-btn--active {
+  background: var(--accent);
+  color: white;
+}
+
+.settings-color-group {
+  display: flex;
+  gap: 8px;
+}
+
+.settings-color-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.settings-color-dot--active {
+  border-color: var(--text-h);
+  transform: scale(1.1);
+}
+
+.settings-switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+}
+
+.settings-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.settings-switch__track {
+  position: absolute;
+  inset: 0;
+  background: var(--border);
+  border-radius: 26px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.settings-switch__track::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.settings-switch input:checked + .settings-switch__track {
+  background: var(--accent);
+}
+
+.settings-switch input:checked + .settings-switch__track::before {
+  transform: translateX(20px);
+}
+
+.settings-section--danger {
+  border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent);
+}
+
+.settings-danger-btn {
+  width: 100%;
+  border: none;
+  background: var(--danger-surface);
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.settings-danger-btn:hover {
+  background: color-mix(in srgb, var(--danger) 18%, var(--danger-surface));
+}

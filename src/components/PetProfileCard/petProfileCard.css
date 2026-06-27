@@ -1,0 +1,75 @@
+.card{
+    max-width: 420px;
+    width: 100%;
+    border-radius: 28px;
+    background-color: var(--accent);
+    color: var(--on-accent);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 10px 28px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+.card__title{
+    font-size: 22px;
+    margin: 0;
+}
+.card__photo{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid var(--on-accent);
+    object-fit: cover;
+}
+.card__photo--placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-dark);
+    color: var(--on-accent);
+}
+.card__name{
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+}
+.card__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 14px;
+}
+.card__field{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.card__label{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--on-accent-muted);
+}
+.card__value{
+    font-size: 15px;
+    font-weight: 600;
+}
+.card__p{
+    font-size: 17px;
+}
+.card__notes{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 12px 14px;
+    margin: 0;
+    line-height: 1.4;
+}

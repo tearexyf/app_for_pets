@@ -1,0 +1,71 @@
+.pet-profile-page {
+  min-height: 100svh;
+  padding: 20px 16px 100px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pet-profile__back {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.pet-profile__back:hover {
+  color: var(--accent-hover);
+}
+
+.pet-profile__actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.pet-profile__action {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px;
+  border-radius: 14px;
+  border: none;
+  background: var(--surface);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--accent) 12%, transparent);
+  transition: background 0.2s ease;
+}
+
+.pet-profile__action:hover {
+  background: var(--surface-hover);
+}
+
+.pet-profile__btn {
+  font-size: 16px;
+  padding: 13px 20px;
+  border-radius: 40px;
+  background-color: var(--accent);
+  color: var(--on-accent);
+  border: none;
+  cursor: pointer;
+}
+
+.pet-profile__btn:hover {
+  background-color: var(--accent-hover);
+}

@@ -1,0 +1,98 @@
+.create{
+    padding: 20px 80px;
+    border-radius: 40px;
+    color: var(--text-h);
+    background: var(--accent-light);
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+.create__title{
+    font-size: 27px;
+    color: var(--text-h);
+    font-family: "Mystery Quest", system-ui;
+
+}
+.add-photo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:20px;
+}
+.add-photo__img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--accent);
+}
+.add-photo__not-img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:3px dashed var(--accent);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+}
+.create__label{
+    font-size:17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-h);
+  font-family: "Emilys Candy", serif;
+
+}
+.create__input{
+    font-size:17px;
+    width: 100%;
+    max-width: 70%;
+    height: 40px;
+    border-radius: 17px;
+    padding:10px;
+    background-color: var(--accent-dark);
+    color: var(--on-accent);
+    border:none;
+  font-family: "Emilys Candy", serif;
+
+}
+.create__textarea{
+    font-size:17px;
+    padding:10px;
+    background-color: var(--accent-dark);
+    color: var(--on-accent);
+    border:none;
+  font-family: "Emilys Candy", serif;
+
+}
+.create__select{
+    font-size:17px;
+    height: 40px;
+    border-radius: 17px;
+    padding:10px;
+    background-color: var(--accent-dark);
+    color: var(--on-accent);
+    border:none;
+  font-family: "Emilys Candy", serif;
+
+}
+.create__btn{
+    font-size:21px;
+    background-color: var(--accent-dark);
+    height: 40px;
+    border-radius: 17px;
+    color: var(--on-accent);
+    width: 50%;
+    border:none;
+    cursor: pointer;
+  font-family: "Emilys Candy", serif;
+
+}
+
+.create__btn:hover {
+  background-color: var(--accent-hover);
+}
