@@ -16,7 +16,7 @@
 }
 
 .settings-title {
-  font-size: 32px;
+  font-size: 27px;
   margin: 0;
   color: var(--text-h);
   text-align: center;
@@ -50,7 +50,7 @@
 }
 
 .settings-section__title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: #9a8aab;
   text-transform: uppercase;
@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
   color: var(--text-h);
 }
@@ -71,7 +71,7 @@
   padding: 11px 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  font-size: 15px;
+  font-size: 10px;
   outline: none;
   background: var(--surface-muted);
   color: var(--text-h);
@@ -86,7 +86,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 10px;
   color: var(--text-h);
   font-weight: 500;
 }
@@ -108,7 +108,7 @@
   background: none;
   padding: 6px 14px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--accent);
   cursor: pointer;
