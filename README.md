@@ -1,4 +1,4 @@
-~app_for_pets~
+app_for_pets
 
 app_for_pets — это приложение для владельцев домашних животных, созданное на React + TypeScript + Vite.
 
