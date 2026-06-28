@@ -36,7 +36,7 @@ function CreateProfile() {
       notes,
     };
     savePet(newPet);
-    navigate("/");
+    navigate("/home");
   };
 
   const handlePhotoChange = (event: React.ChangeEvent<HTMLInputElement>) => {
