@@ -1,5 +1,5 @@
 .create{
-    padding: 20px 80px;
+    padding:  41px;
     border-radius: 40px;
     color: var(--text-h);
     background: var(--accent-light);
@@ -7,10 +7,11 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap:7px;
+    gap:15px;
 }
 .create__title{
-    font-size: 27px;
+    font-size: 17px;
+    text-wrap: nowrap;
     color: var(--text-h);
     font-family: "Mystery Quest", system-ui;
 
@@ -22,15 +23,15 @@
     margin-bottom:20px;
 }
 .add-photo__img{
-    width:200px;
-    height:200px;
+    width:100px;
+    height:100px;
     border-radius:50%;
     object-fit:cover;
     border:3px solid var(--accent);
 }
 .add-photo__not-img{
-    width:200px;
-    height:200px;
+    width:100px;
+    height:100px;
     border-radius:50%;
     border:3px dashed var(--accent);
     display:flex;
@@ -39,7 +40,7 @@
     font-size:60px;
 }
 .create__label{
-    font-size:17px;
+    font-size:15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +49,7 @@
 
 }
 .create__input{
-    font-size:17px;
+    font-size:15px;
     width: 100%;
     max-width: 70%;
     height: 40px;
@@ -61,7 +62,7 @@
 
 }
 .create__textarea{
-    font-size:17px;
+    font-size:15px;
     padding:10px;
     background-color: var(--accent-dark);
     color: var(--on-accent);
@@ -70,8 +71,8 @@
 
 }
 .create__select{
-    font-size:17px;
-    height: 40px;
+    font-size:15px;
+    height: 20px;
     border-radius: 17px;
     padding:10px;
     background-color: var(--accent-dark);
@@ -81,7 +82,8 @@
 
 }
 .create__btn{
-    font-size:21px;
+    font-size:17px;
+    text-wrap: nowrap;
     background-color: var(--accent-dark);
     height: 40px;
     border-radius: 17px;

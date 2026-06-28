@@ -1,6 +1,6 @@
 
 .petCard{
-    padding: 74px;
+    padding: 20px;
     margin-bottom: 20px;
     text-align: center;
     background-color: var(--accent-light);
@@ -10,14 +10,14 @@
     width: 100%;
 }
 .petCard__photo{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
 }
 .petCard__name{
-    font-size: 20px;
+    font-size: 21px;
     color: var(--text-h);
     margin:5px;
 }

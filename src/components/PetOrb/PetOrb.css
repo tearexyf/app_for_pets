@@ -10,7 +10,7 @@
 
 .pet-orb {
   position: relative;
-  width: 100%;
+  width: 50%;
   border-radius: 50%;
   border: 3px solid var(--accent);
   background: var(--accent-light);

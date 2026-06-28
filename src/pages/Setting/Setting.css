@@ -1,6 +1,6 @@
 .settings-page {
-  min-height: 100svh;
-  padding: 20px 74px 100px;
+  height: 100%;
+  padding: 40px 40px 90px;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
