@@ -9,6 +9,7 @@ import Calendar from "../pages/Calendar/Calendar";
 import Setting from "../pages/Setting/Setting";
 import GalleryHub from "../pages/Gallery/GalleryHub";
 import PetGallery from "../pages/Gallery/PetGallery";
+import EditProfile from "../pages/EditProfile/EditProfile";
 
 function RouterMy() {
   return (
@@ -23,6 +24,7 @@ function RouterMy() {
         <Route path="/settings" element={<Setting />} />
         <Route path="/create-task" element={<CreateTask />} />
         <Route path="/create-pet" element={<CreateProfile />} />
+        <Route path="/edit-profile" element={<EditProfile/>}/>
         <Route path="*" element={<StartPage />} />
       </Routes>
     </BrowserRouter>

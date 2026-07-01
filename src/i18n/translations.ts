@@ -34,6 +34,7 @@ export const translations = {
     "petProfile.goToPets": "Go to my pets",
     "petProfile.tasks": "Tasks",
     "petProfile.calendar": "Calendar",
+    "petProfile.edit": "Edit",
 
     "profile.species": "Species",
     "profile.breed": "Breed",
@@ -48,6 +49,7 @@ export const translations = {
     "profile.gender.female": "Female",
 
     "create.title": "Create pet's profile",
+    "edit.title": "Edit pet's profile",
     "create.name": "Name",
     "create.species": "Species",
     "create.breed": "Breed",
@@ -168,6 +170,7 @@ export const translations = {
     "petProfile.goToPets": "К списку питомцев",
     "petProfile.tasks": "Задачи",
     "petProfile.calendar": "Календарь",
+    "petProfile.edit": "Редактировать",
 
     "profile.species": "Вид",
     "profile.breed": "Порода",
@@ -182,6 +185,7 @@ export const translations = {
     "profile.gender.female": "Самка",
 
     "create.title": "Создать профиль питомца",
+    "edit.title": "Редактировать профиль питомца",
     "create.name": "Имя",
     "create.species": "Вид",
     "create.breed": "Порода",

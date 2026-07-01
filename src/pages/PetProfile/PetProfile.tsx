@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { getPets, getSelectedPetId } from "../../services/storage";
 import PetProfileCard from "../../components/PetProfileCard/PetProfileCard";
 import BottomMenu from "../../components/BottomMenu/BottomMenu";
-import { FaArrowLeft, FaTasks, FaCalendarAlt } from "react-icons/fa";
+import { FaArrowLeft, FaTasks, FaCalendarAlt, FaEdit } from "react-icons/fa";
 import { useTranslation } from "../../i18n/useTranslation";
 import "./PetProfile.css";
 
@@ -55,6 +55,13 @@ function PetProfile() {
           onClick={() => navigate("/calendar")}
         >
           <FaCalendarAlt /> {t("petProfile.calendar")}
+        </button>
+        <button
+          type="button"
+          className="pet-profile__action"
+          onClick={() => navigate("/edit-profile")}
+        >
+          <FaEdit /> {t("petProfile.edit")}
         </button>
       </div>
 
